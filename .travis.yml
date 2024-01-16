@@ -11,11 +11,11 @@ script:
   - docker run -e CI=true shirink/docker2 npm run test
 deploy:
   provider: elasticbeanstalk
-  region: "us-west-1"
-  app: "first-app-docker"
-  env: "First-app-docker-env"
-  bucket_name: "elasticbeanstalk-us-west-1-111180401124"
-  bucket_path: "first-app-docker"
+  region: "us-east-1"
+  app: "frontend"
+  env: "Frontend-env"
+  bucket_name: "elasticbeanstalk-us-east-1-111180401124"
+  bucket_path: "frontend"
 
   on:
     branch: main
